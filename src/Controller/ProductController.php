@@ -47,8 +47,7 @@ class ProductController
             $product = $this->productDB->get($id);
             include "src/View/edit.php";
         } else {
-            $id = $_POST['id'];
-            $products = new Products($id, $_POST['name'], $_POST['type'], $_POST['spice'], $_POST['amount'], $_POST['date'], $_POST['description']);
+            $products = new Products($_POST['id'], $_POST['name'], $_POST['type'], $_POST['spice'], $_POST['amount'], $_POST['date'], $_POST['description']);
             $this->productDB->update($products);
             header('location:index.php?page=list-product');
         }

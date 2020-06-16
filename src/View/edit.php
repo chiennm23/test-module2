@@ -8,11 +8,11 @@
                 <table>
                     <tr>
                         <td>Id:</td>
-                        <td><input type="text" name="id" disabled value="<?php echo $product->getId() ?>" ></td>
+                        <td><input type="text" name="id" disabled value="<?php echo $product->getId() ?>"></td>
                     </tr>
                     <tr>
                         <td>Name:</td>
-                        <td><input type="text" name="name" value="<?php echo $product->getName() ?>" ></td>
+                        <td><input type="text" name="name" value="<?php echo $product->getName() ?>"></td>
                     </tr>
                     <tr>
                         <td>Type:</td>
@@ -33,19 +33,19 @@
                     </tr>
                     <tr>
                         <td>Spice:</td>
-                        <td><input type="text" name="spice" value="<?php echo $product->getSpice() ?>" ></td>
+                        <td><input type="text" name="spice" value="<?php echo $product->getSpice() ?>"></td>
                     </tr>
                     <tr>
                         <td>Amount:</td>
-                        <td><input type="text" name="amount" value="<?php echo $product->getAmount() ?>" ></td>
+                        <td><input type="text" name="amount" value="<?php echo $product->getAmount() ?>"></td>
                     </tr>
                     <tr>
                         <td>Date:</td>
-                        <td><input type="text" name="date" value="<?php echo $product->getDate() ?>" ></td>
+                        <td><input type="text" name="date" value="<?php echo $product->getDate() ?>"></td>
                     </tr>
                     <tr>
                         <td>Description:</td>
-                        <td><textarea name="description" ></textarea></td>
+                        <td><textarea name="description"><?php echo $product->getDescription() ?></textarea></td>
                     </tr>
                 </table>
                 <button type="submit" class="btn btn-primary">UPDATE</button>
